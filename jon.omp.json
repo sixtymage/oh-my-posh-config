@@ -26,17 +26,6 @@
           }
         },
         {
-          "type": "time",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#193549",
-          "background": "#4caf50",
-          "properties": {
-            "time_format": "15:04:05",
-            "prefix": " "
-          }
-        },
-        {
           "type": "dotnet",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
@@ -66,6 +55,14 @@
           }
         },
         {
+          "type": "kubectl",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "background": "#007396",
+          "foreground": "#ffffff",
+          "template": " \uFD31 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
+        },
+        {
           "type": "node",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
@@ -87,8 +84,7 @@
           "style": "plain",
           "foreground": "#ffffff",
           "properties": {
-            "text": "",
-            "prefix": " "
+            "text": "Λ"
           }
         }
       ]
